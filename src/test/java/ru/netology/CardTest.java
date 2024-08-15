@@ -22,8 +22,7 @@ public class CardTest {
         form.$("[data-test-id=agreement]").click();
         form.$("[data-test-id=agreement] .checkbox__text").shouldHave(exactText("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
         $(".button_view_extra").click();
-        $(".paragraph").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
-
+        $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
 
         //        Thread.sleep(5000); //устанавливает задержку на открытие страницы
